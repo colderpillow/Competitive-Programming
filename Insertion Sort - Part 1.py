@@ -25,7 +25,11 @@ def insertionSort1(n, arr):
         else:
             arr[-i] = num
             print(*arr)
-            return
+            break
+    if num < arr[0]:
+        arr[0] = num
+        print(*arr)
+        return
     
 
 if __name__ == '__main__':
